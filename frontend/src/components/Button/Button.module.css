@@ -1,9 +1,16 @@
 .primary_btn{
-    background-color: #fe6703;
     padding: 10px 30px;
-    color: white;
-    border:none;
     text-transform: uppercase;
+    border:2px solid #fe6703;
+    background-color: transparent;
+    color: black;
+    font-weight: 900;
+    border-radius: 50px;
+}
+.primary_btn:hover{
+    background-color: #fe6703;
+    color: white;
+    border: none;
 }
 button:hover{
     cursor: pointer;
