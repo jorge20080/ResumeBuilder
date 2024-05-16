@@ -9,34 +9,6 @@ const Home = () =>{
             </main>
             <section className={styles.test}>
                 <h2>Templates</h2>
-                <ul>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                    <li>First</li>
-                </ul>
             </section>
         </>
     )

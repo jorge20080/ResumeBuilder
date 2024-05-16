@@ -3,8 +3,9 @@ import styles from './Button.module.css';
 
 type Props = {
     children: ReactNode,
+    type?: 'primary'|'secondary'
 }
-const Button = ({children, ...rest}: Props) =>{
-    return <button className={styles.primary_btn} {...rest} >{children}</button>
+const Button = ({children, type, ...rest}: Props) =>{
+    return <button className={`${type==="primary"? styles.primary_btn : styles.secondary_btn} ${styles.btn}`} {...rest} >{children}</button>
 }
 export default Button;

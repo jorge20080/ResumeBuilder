@@ -14,3 +14,9 @@
 .secondary_color{
     color: #fe6703;
 }
+
+@media screen and (max-width:720px){
+    .header{
+        width: 80%;
+    }
+}
