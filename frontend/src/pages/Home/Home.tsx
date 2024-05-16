@@ -1,4 +1,3 @@
-import Button from '../../components/Button/Button';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import styles from './Home.module.css';
 
