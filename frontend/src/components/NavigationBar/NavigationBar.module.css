@@ -1,0 +1,16 @@
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+.nav_bar ul{
+    display: flex;
+    list-style: none;
+    padding:0;
+    gap: 20px;
+}
+.nav_bar a, .nav_bar a:visited{
+    text-decoration: none;
+    color: black;
+}
