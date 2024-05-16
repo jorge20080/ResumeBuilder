@@ -1,4 +1,4 @@
-section{
+.templates{
     padding: 50px;
     background-color: white;
 }
@@ -6,4 +6,31 @@ main{
     min-height: calc(100vh - 70px);
     display: grid;
     place-content: center;
+}
+.templates ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding:0;
+    margin-top: 50px;
+}
+.templates img{
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+.templates img:hover{
+    transform: scale(1.1);
+}
+
+.faq{
+    padding: 50px;
+    background-color: black;
+}
+.faq h2{
+    color: #fe6703;
+}
+.faq li{
+    padding-block: 20px;
+    font-size: 20px;
+    color: white;
 }
