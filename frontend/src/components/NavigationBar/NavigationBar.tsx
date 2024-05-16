@@ -5,16 +5,19 @@ const NavigationBar = () =>{
     return (
         <header>
             <nav className={styles.nav_bar}>
-                <span className={styles.logo}>Logo</span>
+                <span className={styles.logo}>
+                    Resume
+                    <span>Builder</span>
+                </span>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink className={({isActive})=> isActive? styles.active_link : undefined} to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="login">Login</NavLink>
+                        <NavLink className={({isActive})=> isActive? styles.active_link : undefined} to="login">Login</NavLink>
                     </li>
                     <li>
-                        <NavLink to="register">Register</NavLink>
+                        <NavLink className={({isActive})=> isActive? styles.active_link : undefined} to="register">Register</NavLink>
                     </li>
                 </ul>
             </nav>

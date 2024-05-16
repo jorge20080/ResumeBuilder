@@ -3,14 +3,32 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 30px;
+    padding-block: 10px;
 }
 .nav_bar ul{
     display: flex;
     list-style: none;
     padding:0;
-    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+}
+.logo span{
+    display: block;
+    color:#fe6703;
 }
 .nav_bar a, .nav_bar a:visited{
     text-decoration: none;
     color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.nav_bar .active_link, .nav_bar .active_link:visited{
+    background-color: #fe6703;
+    color: whitesmoke;
+    border-radius: 50px;
 }
