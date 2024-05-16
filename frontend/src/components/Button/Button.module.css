@@ -1,16 +1,17 @@
 .primary_btn{
     padding: 10px 30px;
     text-transform: uppercase;
-    border:2px solid #fe6703;
+    border: 3px solid #fe6703;
+    border-color: black black #fe6703 #fe6703;
     background-color: transparent;
     color: black;
     font-weight: 900;
     border-radius: 50px;
+    transition: all 300ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .primary_btn:hover{
-    background-color: #fe6703;
-    color: white;
-    border: none;
+    border-color: #fe6703 #fe6703 black black;
 }
 button:hover{
     cursor: pointer;

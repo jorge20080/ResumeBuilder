@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px;
 }
 .nav_bar ul{
     display: flex;
@@ -10,8 +10,10 @@
 }
 .logo{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 .logo span{
     display: block;
@@ -28,5 +30,5 @@
 }
 .nav_bar .active_link, .nav_bar .active_link:visited{
     background-color: #fe6703;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.909);
 }
