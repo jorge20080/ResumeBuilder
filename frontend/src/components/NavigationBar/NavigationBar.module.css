@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+
+
+
+    /* background-color: rgba(0, 0, 0, 1);
+    color: white; */
 }
 .nav_bar ul{
     display: flex;
@@ -24,6 +29,10 @@
     color: black;
     font-weight: 700;
     padding: 7.5px 15px;
+
+
+
+    /* color: white; */
 }
 .nav_bar a:hover{
     background-color: gainsboro;

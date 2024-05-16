@@ -6,21 +6,15 @@
     transition: all 300ms ease-in-out;
     border-width: 1.5px;
     border-style:solid;
+    border-color: black black #fe6703 #fe6703;
 }
 .primary_btn{
     background-color: rgba(255, 255, 255, 0.2);
-    border-color: black black #fe6703 #fe6703;
-}
-.primary_btn:hover{
-    border-color: #fe6703 #fe6703 black black;
 }
 .secondary_btn{
     background-color: #fe67032e;
-    border-color: #fe6703 #fe6703 black black;
-}
-.secondary_btn:hover{
-    border-color: black black #fe6703 #fe6703;
 }
 .btn:hover{
     cursor: pointer;
+    border-color: #fe6703 #fe6703 black black;
 }
