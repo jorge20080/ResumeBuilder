@@ -1,0 +1,30 @@
+.login_form{
+    max-width: 500px;
+    margin: auto;
+    padding-block: 50px;
+    min-height: calc(100vh - 50px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.login_form input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.login_form a{
+    color: #fe6703;
+    text-decoration: none;
+}
+.login_form p{
+    font-size: 14px;
+}
+.login_form input[type="submit"]{
+    width: fit-content;
+    padding-inline: 30px;
+    background-color: #fe6703;
+    border:none;
+    color: white;
+    text-transform: uppercase;
+}
