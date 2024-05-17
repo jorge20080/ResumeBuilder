@@ -1,11 +1,18 @@
 .templates{
     padding: 50px;
-    background-color: white;
-}
-main{
-    min-height: calc(100vh - 70px);
+    /* min-height: calc(100vh - 50px); */
+    box-sizing: border-box;
     display: grid;
     place-content: center;
+    background-color: white;
+    max-width: 2000px;
+    margin: auto;
+}
+main{
+    min-height: calc(100vh - 50px);
+    display: grid;
+    place-content: center;
+    background-color: #fac5707a;
 }
 .templates ul{
     list-style: none;
@@ -24,13 +31,25 @@ main{
 
 .faq{
     padding: 50px;
-    background-color: black;
+    /* min-height: calc(100vh - 50px); */
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.faq_content{
+    max-width: 2000px;
+    margin: auto;
 }
 h2{
     color: #fe6703;
+    font-size: 30px;
 }
 .faq li{
     padding-block: 20px;
-    font-size: 20px;
-    color: white;
+    font-size: 22px;
+}
+
+@media screen and (max-width:720px){
+    .templates ul{
+        display: grid;
+    }
 }

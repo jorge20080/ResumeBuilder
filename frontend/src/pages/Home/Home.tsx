@@ -28,13 +28,19 @@ const Home = () =>{
                 </ul>
             </section>
             <section className={styles.faq}>
-                <h2>How to...</h2>
-                <ul>
-                    <li>Can can I use ResumeBuilder for free?</li>
-                    <li>How can I customize my resume?</li>
-                    <li>Can I download my resume in Word or PDF format?</li>
-                    <li>How to cancel my account?</li>
-                </ul>
+                <div className={styles.faq_content}>
+                    <h2>How to...</h2>
+                    <ul>
+                        <li>Can I use ResumeBuilder for free?</li>
+                        <li>How can I customize my resume?</li>
+                        <li>Can I download my resume in PDF format?</li>
+                        <li>How to cancel my account?</li>
+                        <li>Can I build a cover letter too?</li>
+                        <li>How to change the language of my Resume?</li>
+                        <li>Can I add a photo to my Resume?</li>
+                        <li>How many Resumes can I create?</li>
+                    </ul>
+                </div>
             </section>
         </>
     )
