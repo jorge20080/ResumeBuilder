@@ -5,4 +5,8 @@ html, body{
 body {
   font-family: "Open Sans", sans-serif;
   /* background-color: #fac670; */
+  /* background-color: #fac5707a; */
+  /* background-color: #39ade713; */
+  /* background: linear-gradient(122deg, #39ade713 50%, #c3e6f8b7 50%); */
+  /* background: linear-gradient(110deg, #c7e7f7b7 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #39ade7b7 70%, #39ade7b7 70%); */
 }

@@ -5,14 +5,14 @@ const Login = () =>{
     return (
         <div className={styles.login_form}>
             <form>
-                <h2>Login</h2>
+                <span className={styles.heading}>Welcome to <h2>Build My Resume</h2></span>
                 <label>
-                    Username
-                    <input type="text" />
+                    <span>Username</span>
+                    <input type="text"/>
                 </label>
                 <label>
-                    Password
-                    <input type="password" />
+                    <span>Password</span>
+                    <input type="password"/>
                 </label>
                 <p>Forgot your password? Click <Link to="signup">here</Link></p>
                 <p>Don't have an account yet? Click <Link to="signup">here</Link></p>

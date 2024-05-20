@@ -16,6 +16,7 @@ const Home = () =>{
         <>
             <main>
                 <MainHeader/>
+                <div className={styles.drop}></div>
             </main>
             <section className={styles.templates}>
                 <h2>Templates</h2>

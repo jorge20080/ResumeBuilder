@@ -3,6 +3,7 @@ import './App.css'
 import RootLayout from './components/RootLayout/RootLayout'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
 
 function App() {
   const router = createBrowserRouter([
@@ -20,7 +21,11 @@ function App() {
         },
         {
           path:'register',
-          element: <p>Register Page</p>
+          element: <Register/>
+        },
+        {
+          path:'buildresume',
+          element: <Register/>
         }
       ]
     }

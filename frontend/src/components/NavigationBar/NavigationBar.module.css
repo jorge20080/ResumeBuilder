@@ -5,29 +5,46 @@
     padding-inline: 10px;
     position: sticky;
     top:0;
-    background-color: black;
+    /* background-color: black;
+    background-color: 	#2d383c; */
+    /* background-color: #39ade713; */
     z-index: 100;
+    /* background: linear-gradient(122deg, #f0f9ff 50%, #c3e6f8 50%); */
+    background-color: #f0f9ff;
 }
 .nav_bar ul{
     display: flex;
     list-style: none;
+    background-color: #2d383c;
+    padding:13px 5px;
+    border-radius: 50px;
 }
 .logo{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 900;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 5px 10px;
     color: white;
+    /* background-color: #2d383c; */
+    /* color: #2d383c; */
+    border-radius: 10px;
+    /* aspect-ratio: 1; */
+    /* border-radius: 50%; */
+    /* border-radius: 51% 49% 90% 32% / 92% 44% 56% 54%; */
+    color: #2d383c;
+    
 }
-.logo span{
-    font-size: 14px;
+/* .logo span{
     color: #fe6703;
-}
+    color: #00C8AA;
+    color: #39ace7;
+} */
 .logo > .logo2{
-    font-size: 16px;
     display: block;
-    color: white;
+    color: #2d383c;
+    /* color: #2d383c; */
+    color: #39ace7;
 }
 .nav_bar a, .nav_bar a:visited{
     text-decoration: none;
@@ -39,8 +56,12 @@
 .nav_bar a:hover{
     background-color: gainsboro;
     color: black;
+    border-radius: 50px;
 }
 .nav_bar .active_link, .nav_bar .active_link:visited{
     background-color: #fe6703;
-    color: rgba(245, 245, 245, 0.909);
+    color: white;
+    background-color: #00C8AA;
+    background-color: #39ace7;
+    border-radius: 50px;
 }
