@@ -1,13 +1,12 @@
 .login_form{
     padding-block: 50px;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 79px);
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    /* background-color: #fac5707a; */
     justify-content: center;
-    /* background-color: #fac57034; */
-    background: linear-gradient(125deg, #39ade713 70%, #c3e6f8b7 70%);
+    background-color: #2d383c;
+    background-color: white;
 }
 .login_form form::before, .login_form form::after{
     content:'';
@@ -41,7 +40,8 @@
     /* border-radius: 0 50px 0 50px; */
     /* border: 1px solid gray; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    /* color: white; */
 }
 .heading{
     text-transform: uppercase;
@@ -90,6 +90,7 @@
     position: relative;
     display:block;
     color: black;
+    /* color: white; */
 }
 .login_form label span{
     position: absolute;

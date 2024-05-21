@@ -1,0 +1,8 @@
+.faq{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 5px 10px;
+    list-style: none;
+    padding:0;
+    box-sizing: border-box;
+}

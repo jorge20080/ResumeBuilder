@@ -1,73 +1,10 @@
-.templates{
-    padding: 50px;
-    /* min-height: calc(100vh - 50px); */
-    box-sizing: border-box;
-    display: grid;
-    place-content: center;
-    background-color: white;
-    max-width: 2000px;
-    margin: auto;
-    background: linear-gradient(125deg, #39ade713 70%, #c3e6f8b7 70%);
-}
-main{
-    min-height: calc(100vh - 70px);
-    display: grid;
-    place-content: center;
-    /* background-color: #fac5707a; */
-    /* background-color: #fac57034;
-    background-color: #00c8aa14;
-    background-color: #39ade713; */
-    background: linear-gradient(125deg, #39ade713 70%, #c3e6f8b7 70%);
-}
-.templates ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding:0;
-    margin-top: 50px;
-}
-.templates img{
-    width: 100%;
-    transition: all 200ms ease-in-out;
-}
-.templates img:hover{
-    transform: scale(1.1);
-}
-/* .drop {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background: #c3e6f8b7;
-    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
-    opacity: 0.5;
-    border: 2px solid #3d93ff;
-  } */
 .faq{
-    padding: 50px;
-    /* min-height: calc(100vh - 50px); */
+    padding: 50px 100px;
     box-sizing: border-box;
-    background-color: gainsboro;
-    background: linear-gradient(125deg, #39ade713 70%, #c3e6f8b7 70%);
-}
-.faq_content{
     max-width: 2000px;
     margin: auto;
 }
 h2{
-    color: #fe6703;
     font-size: 30px;
-    color: #00C8AA;
     color: #39ace7;
-}
-.faq li{
-    padding-block: 20px;
-    font-size: 22px;
-    color: gray;
-    color: black;
-}
-
-@media screen and (max-width:720px){
-    .templates ul{
-        display: grid;
-    }
 }

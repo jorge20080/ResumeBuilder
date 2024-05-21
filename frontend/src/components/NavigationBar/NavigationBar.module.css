@@ -2,66 +2,55 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 10px;
+    padding:10px 100px;
     position: sticky;
     top:0;
-    /* background-color: black;
-    background-color: 	#2d383c; */
-    /* background-color: #39ade713; */
-    z-index: 100;
-    /* background: linear-gradient(122deg, #f0f9ff 50%, #c3e6f8 50%); */
-    background-color: #f0f9ff;
+    z-index: 110;
+    /* background-color: #2d383c;
+    box-shadow: rgba(0, 0, 0, 0.187) 0px 25px 20px -20px; */
+    background-color: white;
+    max-width: 2000px;
+    margin: auto;
 }
 .nav_bar ul{
     display: flex;
     list-style: none;
-    background-color: #2d383c;
-    padding:13px 5px;
+    padding:10px 3px;
     border-radius: 50px;
+    margin: 0;
+    background-color: rgba(240, 248, 255, 0.2);
+    border: 1px solid rgb(158, 158, 158);
+    background-color: #2d383c;
 }
 .logo{
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 900;
-    /* border-radius: 5px; */
     padding: 5px 10px;
-    color: white;
-    /* background-color: #2d383c; */
-    /* color: #2d383c; */
     border-radius: 10px;
-    /* aspect-ratio: 1; */
-    /* border-radius: 50%; */
-    /* border-radius: 51% 49% 90% 32% / 92% 44% 56% 54%; */
-    color: #2d383c;
-    
+    color: #39ace7;
+    letter-spacing: -2px;
 }
-/* .logo span{
-    color: #fe6703;
-    color: #00C8AA;
-    color: #39ace7;
-} */
-.logo > .logo2{
+.logo2{
     display: block;
+    color: white;
     color: #2d383c;
-    /* color: #2d383c; */
-    color: #39ace7;
+    margin-top: -8px;
 }
 .nav_bar a, .nav_bar a:visited{
     text-decoration: none;
-    color: black;
-    font-weight: 700;
-    padding: 7.5px 15px;
-    color: white;
+    font-weight: 500;
+    padding: 7px 10px;
+    color: #2d383c;
+    color: whitesmoke;
 }
 .nav_bar a:hover{
     background-color: gainsboro;
-    color: black;
+    color: #2d383c;
     border-radius: 50px;
 }
 .nav_bar .active_link, .nav_bar .active_link:visited{
-    background-color: #fe6703;
-    color: white;
-    background-color: #00C8AA;
+    color: whitesmoke;
     background-color: #39ace7;
     border-radius: 50px;
 }
