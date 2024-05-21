@@ -1,6 +1,5 @@
-.faq{
+.faq_container{
     padding: 50px 100px;
-    box-sizing: border-box;
     max-width: 2000px;
     margin: auto;
 }

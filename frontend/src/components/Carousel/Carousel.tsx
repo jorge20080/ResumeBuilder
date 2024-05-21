@@ -10,8 +10,8 @@ const Carousel = ({carouselImages} : Props) =>{
         <div className={styles.container}>
             <button onClick={handlePreviousImage}>&lt;</button>
             <ul className={styles.templates}>
-            {currentItems.map(image=>{
-                return <li><img src={image} alt="Image" /></li>
+            {currentItems.map((image, idx)=>{
+                return <li key={idx}><img src={image} alt="Image" /></li>
             })}
             </ul>
             <button onClick={handleNextImage}>&gt;</button>

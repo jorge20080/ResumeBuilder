@@ -3,13 +3,16 @@ import { TQuestion } from '../QuestionnaireAccordion/QuestionnaireAccordion';
 import styles from './Question.module.css';
 
 type Props = {
-    question: TQuestion
+    question: TQuestion,
+    show: boolean
 }
-const Question = ({question}: Props) =>{
-    const [showAnswer, setShowAnswer] = useState(false);
+const Question = ({question, show = false}: Props) =>{
+    const [showAnswer, setShowAnswer] = useState(show);
     return (
         <li className={styles.question}>
-            <h3>{question.question}</h3>
+            <a onClick={()=>setShowAnswer(prev=>!prev)}>
+                <h3>{question.question}</h3>
+            </a>
             {showAnswer && <p>{question.answer}</p>}
             <button onClick={()=>setShowAnswer(prev=>!prev)}>{showAnswer ? '-' : '+'}</button>
         </li>

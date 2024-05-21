@@ -63,7 +63,6 @@
 }
 .templates h2{
     margin-bottom: 100px;
-    margin-inline: 20px;
 }
 @media screen and (max-width:720px){
     .header{
