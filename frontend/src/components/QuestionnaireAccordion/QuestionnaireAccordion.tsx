@@ -11,14 +11,12 @@ type Props = {
     questionnaire: TQuestion[]
 }
 const QuestionnaireAccordion = ({questionnaire}:Props) =>{
-    const [showAll, setShowAll] = useState(true);
     return (
         <>
-            <a onClick={()=>setShowAll(prev=>!prev)}>{showAll ? 'Hide All' : 'Show All'}</a>
             <ul className={styles.faq}>
                 {questionnaire.map(question=>{
                     return (
-                        <Question key={question.id} question={question} show={showAll}/>
+                        <Question key={question.id} question={question}/>
                     )
                 })}
             </ul>

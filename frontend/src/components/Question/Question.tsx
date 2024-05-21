@@ -4,10 +4,10 @@ import styles from './Question.module.css';
 
 type Props = {
     question: TQuestion,
-    show: boolean
 }
-const Question = ({question, show = false}: Props) =>{
-    const [showAnswer, setShowAnswer] = useState(show);
+const Question = ({question}: Props) =>{
+    const [showAnswer, setShowAnswer] = useState(false);
+
     return (
         <li className={styles.question}>
             <a onClick={()=>setShowAnswer(prev=>!prev)}>
