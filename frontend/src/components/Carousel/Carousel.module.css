@@ -18,12 +18,12 @@
 .container button:nth-of-type(1){
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 35%;
 }
 .container button:nth-of-type(2){
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 35%;
 }
 .templates{
     list-style: none;
@@ -37,8 +37,9 @@
     width: 100%;
     transition: all 200ms ease-in-out;
     box-sizing: border-box;
-    border: 2px solid #2d383c;
+    border: 1px solid #2d383c;
     height: 100%;
+    border-radius: 5px;
 }
 .templates li{
     transition: all 150ms ease-in-out;

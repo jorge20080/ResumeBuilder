@@ -9,7 +9,7 @@ const Question = ({question}: Props) =>{
     const [showAnswer, setShowAnswer] = useState(false);
 
     return (
-        <li className={styles.question}>
+        <li className={`${styles.question} ${showAnswer? styles.open : undefined}`}>
             <a onClick={()=>setShowAnswer(prev=>!prev)}>
                 <h3>{question.question}</h3>
             </a>

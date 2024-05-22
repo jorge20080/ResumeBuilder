@@ -2,13 +2,15 @@
     background-color: #0f141e;
     color: white;
     bottom:0;
-    padding: 40px;
+    padding: 40px 100px;
+    margin:auto;
 }
 .footer_content{
     max-width: 2000px;
     display: flex;
     gap: 50px;
     margin: auto;
+    max-width: 2000px;
 }
 .footer h3{
     margin:0;

@@ -2,8 +2,13 @@
 .faq{
     display: grid;
     grid-template-columns: 1fr ;
-    gap: 5px 10px;
     list-style: none;
     padding:0;
     box-sizing: border-box;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.faq li:last-child{
+    border-bottom: none;
 }
