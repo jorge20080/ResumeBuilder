@@ -1,3 +1,4 @@
+import FormLayout from '../FormLayout/FormLayout';
 import styles from './CreateResumeForm.module.css';
 
 const CreateResumeForm = () =>{

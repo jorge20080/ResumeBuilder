@@ -1,20 +1,21 @@
-.form_container{
+.container{
     position: relative;
-    padding: 100px 50px;
     width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    padding: 100px 50px;
     border-radius: 30px 0 ;
     height: fit-content;
 }
-.heading{
+.container h1{
     text-transform: uppercase;
 }
-.form_container h2{
+.container h2{
     margin-top: 10px;
     margin-bottom: 50px;
     color: black;
 }
-.form_container input{
+.container input{
     width: 100%;
     box-sizing: border-box;
     height: 40px;
@@ -24,18 +25,18 @@
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
 }
-.form_container input:focus{
+.container input:focus{
     outline: 1px solid #39ace7;
 }
-.lform_container a{
+.container a{
     color: #39ace7;
     text-decoration: none;
 }
-.form_container p{
+.container p{
     font-size: 14px;
 }
 
-.form_container input[type="submit"]{
+.container input[type="submit"]{
     width: fit-content;
     padding-inline: 50px;
     border:none;
@@ -44,15 +45,13 @@
     margin: auto;
     background-color: #39ace7;
 }
-.form_container input[type="password"]{
-    margin-bottom: 0;
-}
-.form_container label{
+
+.container label{
     position: relative;
     display:block;
     color: black;
 }
-.form_container label span{
+.container label span{
     position: absolute;
     top: -6px;
     left: 10px;
