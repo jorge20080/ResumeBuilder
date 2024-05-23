@@ -48,9 +48,12 @@
     color: #2d383c;
 }
 .nav_bar .active_link, .nav_bar .active_link:visited{
-    color: whitesmoke;
-    /* background-color: #39ace7; */
-    /* border-radius: 3px; */
     color: #39ace7;
     border-bottom: 3px solid #39ace7;
+}
+
+@media print {
+    .nav_bar {
+      display: none;
+    }
 }

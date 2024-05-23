@@ -1,0 +1,50 @@
+.form{
+    display: grid;
+    row-gap: 20px;
+    /* max-width: 600px;
+    margin: auto; */
+}
+.form h2{
+    margin:0;
+}
+.form h3{
+    color: white;
+}
+.form label{
+    font-size: 14px;
+    color: white;
+}
+.form input{
+    display: block;
+    height: 35px;
+    border: none;
+    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: gray;
+    color: white;
+}
+.form textarea{
+    resize: vertical;
+    min-height: 150px;
+    border: none;
+    background-color: gray;
+}
+.form button{
+    width: fit-content;
+    border: 1px solid gainsboro;
+    height: 35px;
+    padding-inline: 10px;
+}
+.multiple_inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media print{
+    .form{
+        display: none;
+    }
+}

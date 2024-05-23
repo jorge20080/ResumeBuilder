@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import RootLayout from './components/RootLayout/RootLayout'
+import CreateResume from './pages/CreateResume/CreateResume'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
@@ -25,7 +26,7 @@ function App() {
         },
         {
           path:'buildresume',
-          element: <Register/>
+          element: <CreateResume/>
         }
       ]
     }
