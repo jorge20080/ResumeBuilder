@@ -30,7 +30,7 @@ const RegisterForm = () =>{
                     <span>Repeat Password</span>
                     <input type="password"/>
                 </label>
-                <p>Have an account already? Click <Link to="login">here</Link> to Login</p>
+                <p>Have an account already? Click <Link to="/login">here</Link> to Login</p>
                 <input type="submit" value="register"/>
             </form>
         </FormLayout>

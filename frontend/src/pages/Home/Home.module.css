@@ -1,9 +1,11 @@
-.faq_container{
-    padding: 50px 100px;
-    max-width: 2000px;
+.section_container{
+    padding-inline: 100px;
+    padding-bottom: 50px;
+    padding-top: 0;
+    max-width: 1500px;
     margin: auto;
 }
-h2{
+.section_container h2{
     font-size: 30px;
     color: #39ace7;
 }

@@ -1,33 +1,31 @@
 .header{
-    padding-inline: 100px;
-    padding-block: 50px;
+    padding-block: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-    background-color: #39ace7;
     color: black;
     background-color: #2d383c;
     gap: 50px;
     justify-content: center;
     background-color: white;
-    max-width: 2000px;
+    max-width: 1500px;
     margin: auto;
 }
-.header>img{
-    max-width: 500px;
-    width: 40%;
-    border-radius: 50%;
-    position: relative;
-    /* border-radius: 87% 13% 18% 82% / 30% 46% 54% 70% ; */
+.btn_container {
+    display: flex;
+    gap: 20px;
+}
+.header img{
+    max-width: 400px;
+    width: 300px;
     border: 10px solid white;
-    box-shadow: 5px 5px 5px gray;
-    border-radius: 82% 18% 14% 86% / 49% 49% 51% 51% ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .header h1{
     font-weight: 500;
     font-size: 50px;
     margin-block: 0;
+    color: #2d383c;
 }
 .header p{
     font-size: 20px;
@@ -36,35 +34,8 @@
 }
 .secondary_color{
     color: #39ace7;
-    /* color: #fe6703; */
 }
-.templates h2{
-    position: relative;
-    margin-bottom: 100px;
-    margin-top: 50px;
-}
-.templates h2::after{
-    content: 'FREE';
-    position: absolute;
-    top: 0px;
-    padding:5px 10px;
-    background-color: #fe6703;
-    color: white;
-    font-size: 20px;
-    margin-left: 10px;
-    font-weight: 500;
-    border-radius: 5px;
-}
-.templates{
-    display: grid;
-    justify-content: center;
-    max-width: 2000px;
-    margin-inline: auto;
-    padding-inline: 100px;
-}
-.templates h2{
-    margin-bottom: 100px;
-}
+
 @media screen and (max-width:720px){
     .header{
         margin: 0 50px;

@@ -1,0 +1,23 @@
+.templates h2{
+    position: relative;
+    margin-bottom:50px;
+    margin-top: 50px;
+}
+.templates h2::after{
+    content: 'FREE';
+    position: absolute;
+    top: 0px;
+    padding:5px 10px;
+    background-color: #fe6703;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.templates{
+    display: grid;
+    justify-content: center;
+    max-width: 1500px;
+    margin-inline: auto;
+}

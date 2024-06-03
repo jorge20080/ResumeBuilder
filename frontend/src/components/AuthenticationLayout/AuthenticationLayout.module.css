@@ -1,20 +1,36 @@
 .container{
     width: fit-content;
-    display: flex;
-    gap: 50px;
-    /* align-items: baseline; */
+    display: grid;
+    grid-template-columns: 600px 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    max-width: 1500px;
+    /* min-height: calc(100vh - 190px); */
+    
 }
 .container aside{
-    width: 500px;
     color: black;
+    background-color: #dceff83f;
+    padding: 10px 100px;
+    display: grid;
+    place-content: center;
+    border-right: 1px solid gainsboro;
 }
 .container aside h2{
     margin: 0;
-    color: black;
-    font-size: 40px;
+    color: #009ceb;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 .container aside p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 35px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.form_container{
+    
 }
