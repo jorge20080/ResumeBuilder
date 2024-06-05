@@ -4,8 +4,8 @@ import FormLayout from '../FormLayout/FormLayout';
 const LoginForm = () =>{
     return (
         <FormLayout>
+            <span>Welcome to <h2>Build My Resume</h2></span>
             <form>
-                <span>Welcome to <h2>Build My Resume</h2></span>
                 <label>
                     <span>Username</span>
                     <input type="text"/>

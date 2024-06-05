@@ -1,34 +1,25 @@
 .container{
     position: relative;
-    padding: 100px 50px;
+    padding: 0 30px;
     border-radius: 30px 0 ;
     box-sizing: border-box;
     height:100%;
-    /* display: grid;
-    align-items: center; */
 }
 .container h1{
     text-transform: uppercase;
 }
 .container h2{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: black;
-    color: #39ace7 !important;
-}
-.container h3{
-    color: #39ace7 !important;
+    margin-block: 20px;
+    color: #39ace7;
 }
 .container input{
     width: 100%;
     box-sizing: border-box;
-    height: 40px;
+    height: 35px;
     margin-bottom: 30px;
     border: 1px solid gainsboro;
     padding-inline:15px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.057);
+    border-radius: 5px;
     background-color: white;
 }
 .container input:focus, .container textarea:focus {
@@ -41,53 +32,90 @@
 .container p{
     font-size: 14px;
 }
-
+.container li{
+    padding-bottom: 20px;
+}
 .container input[type="submit"]{
     width: fit-content;
     padding-inline: 50px;
     border:none;
     color: white;
     text-transform: uppercase;
-    margin: auto;
     background-color: #39ace7;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
 }
-
+.container a:hover{
+    cursor: pointer;
+}
 .container label{
     position: relative;
     display:block;
     color: black;
-    font-weight: 900;
+    font-weight: 500;
 }
 .container label span{
     position: absolute;
-    top: -6px;
+    top: -8px;
     left: 10px;
     padding-inline: 5px;
-    /* background-color: white; */
-    text-transform: uppercase;
-    font-size: 12px;
+    background-color: white;
+    font-size: 14px;
 }
 .container textarea{
     resize: vertical;
     min-height: 150px;
-    border-radius: 20px;
+    border-radius: 5px;
     /* background-color: gray; */
     border: 1px solid gainsboro;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(0, 0, 0, 0.057);
     background-color: white;
+    margin-bottom: 30px;
 }
-.container button{
-    padding:10px 20px;
-    border: 1px solid gainsboro;
-    border-radius: 50px;
+.btn_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+.multiple_inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form button{
+    padding:5px 10px;
+}
+.btn_container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.btn_container button:nth-of-type(1){
     background-color: #39ace7;
     color: white;
 }
-.container input[type="submit"]{
-    padding:10px 20px;
-
+fieldset{
+    border: 1px solid gainsboro;
+    padding: 0 30px;
+    padding-block: 40px 20px;
+    margin-bottom: 20px;
+}
+legend{
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+.btn_container button{
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: none;
 }
 
 @media print{

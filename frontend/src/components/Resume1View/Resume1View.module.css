@@ -1,0 +1,105 @@
+.container{
+    max-width: 720px;
+    font-size: 13px;
+    font-weight: 100;
+    padding-top:20px;
+    padding-inline: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px; */
+    border-left: 0.1px solid gray;
+}
+.container > h2, .container > p{
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+.container > h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-block: 5px;
+}
+.container h3{
+    margin-block: 10px;
+}
+.container a:visited, .container a{
+    color: black;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.container h3, .container h4, .container h5{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container h4{
+    margin: 0;
+    /* padding-block: 10px; */
+}
+.container h5{
+    margin-block: 5px;
+}
+.container p, .container li{
+    line-height: 20px;
+    margin-block: 0;
+}
+.container ul li> ul>li{
+    list-style:circle;
+}
+.line_map{
+    border-left: 2px solid gainsboro;
+    padding-left: 20px;
+    position: relative;
+}
+.line_map::before{
+    content:'';
+    position: absolute;
+    left: -6px;
+    top:5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.container section article > ul >li{
+    padding-bottom:20px;
+}
+.container aside article > ul >li{
+    padding-bottom: 10px;
+}
+.container section article > ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+@media print {
+    header, footer, form, button, title, nav {
+      display: none;
+      border: 0;
+    }
+    .form_container, .container, main{
+        display: block;
+        margin: 0;
+        padding:0;
+        border: 0;
+        box-shadow: none;
+    }
+    .section {
+      width:100%!important;
+      padding:0!important;
+      margin:0!important;
+      display: block;
+      -webkit-print-color-adjust: exact !important;
+      box-shadow: none;
+      border: 0;
+    }
+  }
+  @page {
+    margin: 30px 50px;
+    size: auto;
+  }

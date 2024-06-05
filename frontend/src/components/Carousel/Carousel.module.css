@@ -24,7 +24,7 @@
     background-color: #2d383c;
     color: whitesmoke;
     top: 43%;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 .container button:hover{
     cursor: pointer;
