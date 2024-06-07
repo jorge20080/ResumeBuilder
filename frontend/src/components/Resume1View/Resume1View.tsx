@@ -22,7 +22,7 @@ const Resume1View =  ({resumeData}: Props) =>{
                         <h3>Links</h3>
                         <ul>
                             {resumeData.profileData.links.map(link=>{
-                                return <li><a href={link.link.toString()} target="_blank">{link.title}</a></li>
+                                return <li key={link.title.toString()}><a href={link.link.toString()} target="_blank">{link.title}</a></li>
                             })}
                         </ul>
                     </article>
@@ -30,7 +30,7 @@ const Resume1View =  ({resumeData}: Props) =>{
                         <h3>Skills</h3>
                         <ul>
                             {resumeData.profileData.skills.map(skill=>{
-                                return <li>{skill}</li>
+                                return <li key={skill.toString()}>{skill}</li>
                             })}
                         </ul>
                     </article>
@@ -38,7 +38,7 @@ const Resume1View =  ({resumeData}: Props) =>{
                         <h3>Languages</h3>
                         <ul>
                             {resumeData.profileData.languages.map(languages=>{
-                                return <li>{languages}</li>
+                                return <li key={languages.toString()}>{languages}</li>
                             })}
                         </ul>
                     </article>
@@ -56,13 +56,13 @@ const Resume1View =  ({resumeData}: Props) =>{
                             <ul>
                                 {resumeData.profileData.employmentHistory?.map(work=>{
                                     return (
-                                        <li className={styles.line_map}>
+                                        <li className={styles.line_map} key={work.title.toString()}>
                                             <h4>{`${work.title} at ${work.company}, ${work.city}`}</h4>
                                             <p>{`${work.startDate} - ${work.endDate}`}</p>
                                             <h5>Duties</h5>
                                             <ul>
                                                 {work.duties.map(duty=>{
-                                                    return <li>{duty}</li>
+                                                    return <li key={duty.toString()}>{duty}</li>
                                                 })}
                                             </ul>
                                         </li>
@@ -77,7 +77,7 @@ const Resume1View =  ({resumeData}: Props) =>{
                             <ul>
                                 {resumeData.profileData.educationHistory?.map(education=>{
                                     return (
-                                        <li className={styles.line_map}>
+                                        <li className={styles.line_map} key={education.startDate.toString()}>
                                             <h4>{`${education.degree}, ${education.institution}, ${education.city}`}</h4>
                                             <p>{`${education.startDate} - ${education.endDate}`}</p>
                                         </li>
@@ -92,7 +92,7 @@ const Resume1View =  ({resumeData}: Props) =>{
                             <ul>
                                 {resumeData.profileData.references.map(reference=>{
                                     return (
-                                        <li className={styles.line_map}>
+                                        <li className={styles.line_map} key={reference.contact.phoneNumber.toString()}>
                                             <h4>{`${reference.fullName} from ${reference.placeOfReference}`}</h4>
                                             <p>{reference.contact.email}, {reference.contact.phoneNumber}</p>
                                         </li>

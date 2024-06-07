@@ -6,9 +6,10 @@ import styles from '../FormLayout/FormLayout.module.css';
 import ShowFormLayout from '../ShowFormLayout/ShowFormLayout';
 
 type Props = {
-    handleDataChange: (data: WorkRecord)=>void
+    handleDataChange: (data: WorkRecord)=>void,
+    workRecords: WorkRecord[]
 }
-const AddWorkForm = ({handleDataChange}:Props) =>{
+const AddWorkForm = ({handleDataChange, workRecords}:Props) =>{
     const [data, setData] = useState(initialWorkRecord);
     const handleSave = ()=>{
         handleDataChange(data);
@@ -21,6 +22,15 @@ const AddWorkForm = ({handleDataChange}:Props) =>{
     return(
         <fieldset>
             <legend>Work History</legend>
+            {workRecords.length>0 &&
+                <ul>
+                    {
+                        workRecords.map(work=>{
+                            return <li key={work.startDate.toString()}>{work.title}</li>
+                        })
+                    }
+                </ul>
+            }
             <ShowFormLayout addLinkText="Add Work" onSave={handleSave}>
                 <div className={styles.multiple_inputs}>
                     <label>
@@ -39,7 +49,6 @@ const AddWorkForm = ({handleDataChange}:Props) =>{
                     </label>
                     <label>
                         <span>End Date:</span>
-                        <input name="endDate" type="date" onChange={handleInputChange}/>
                     </label>
                 </div>
                 <div className={styles.multiple_inputs}>

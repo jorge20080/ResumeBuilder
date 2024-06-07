@@ -1,16 +1,12 @@
 .container{
     position: relative;
-    padding: 0 30px;
+    padding: 0 0px;
     border-radius: 30px 0 ;
     box-sizing: border-box;
     height:100%;
 }
-.container h1{
-    text-transform: uppercase;
-}
-.container h2{
-    margin-block: 20px;
-    color: #39ace7;
+.auth_form{
+    padding: 0 30px;
 }
 .container input{
     width: 100%;
@@ -32,8 +28,18 @@
 .container p{
     font-size: 14px;
 }
+.container ul{
+    list-style: none;
+    padding:0;
+    margin-bottom: 40px;
+}
 .container li{
-    padding-bottom: 20px;
+    padding: 10px 5px;
+    background-color: whitesmoke;
+    border: 1px solid gainsboro;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .container input[type="submit"]{
     width: fit-content;
@@ -108,8 +114,8 @@ fieldset{
     margin-bottom: 20px;
 }
 legend{
-    font-size: 22px;
-    color: black;
+    font-size: 18px;
+    color: rgb(84, 84, 84);
     font-weight: 600;
 }
 .btn_container button{

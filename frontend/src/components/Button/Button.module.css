@@ -17,6 +17,12 @@
     color: #39ace7;
     border-left-width: 5px;
 }
+.orange_btn{
+    background-color: white;
+    border: 2px solid #fe6703;
+    color: #fe6703;
+    border-left: 5px solid #fe6703;
+}
 .btn:hover{
     cursor: pointer;
 }

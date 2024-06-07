@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import FormLayout from '../FormLayout/FormLayout';
+import styles from '../FormLayout/FormLayout.module.css';
 
 const RegisterForm = () =>{
     return (
         <FormLayout>
-            <form>
+            <form className={styles.auth_form}>
                 <span >Welcome to <h2>Build My Resume</h2></span>
                 <label>
                     <span>First Name</span>

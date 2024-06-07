@@ -61,13 +61,12 @@ const CreateResumeForm = () =>{
     return (
         <>
             <FormLayout>
-            <h2>Build your Resume</h2>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={(e)=>e.preventDefault()}>
                     <AddProfileForm handleProfileDataChange={handlePersonalData}/>
                     <AddProfessionalSummary handleProfessionalDataChange ={handleProfessionalData}/>
                     <AddSingleItemForm text="Language" handleDataChange={handleLanguagesData} values={languages}/>
-                    <AddEducationForm handleDataChange={handleEducationData}/>
-                    <AddWorkForm handleDataChange={handleWorkData}/>
+                    <AddEducationForm handleDataChange={handleEducationData} educationRecords={educationRecords}/>
+                    <AddWorkForm handleDataChange={handleWorkData} workRecords={workRecords}/>
                     {/* <AddSingleItemForm text="Skill" handleDataChange={()=>{}}/>
                     <AddSingleItemForm text="Link" handleDataChange={()=>{}}/>
                     <AddSingleItemForm text="Reference" handleDataChange={()=>{}}/> */}

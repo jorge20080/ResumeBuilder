@@ -19,11 +19,16 @@ const AddSingleItemForm = ({text, handleDataChange, values}: Props) =>{
     return(
         <fieldset>
             <legend>{text[text.length-1]==="y"? Formatter.convertToPlural(text): text+"s" }</legend>
-            <ul>
-                {values.length>0 && values.map(value=>{
-                    return <li>{value}</li>
-                })}
-            </ul>
+            {values.length>0 &&
+                <ul>
+                    {values.map((value, idx)=>{
+                        return <li key={value + idx}>
+                            {value}
+                            <button>x</button>
+                        </li>
+                    })}
+                </ul>
+            }
             <ShowFormLayout addLinkText={`Add ${text}`} onSave={handleSave}>
                 <label>
                     <span>{text}:</span>

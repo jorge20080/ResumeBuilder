@@ -11,9 +11,10 @@ export const initialEducation:EducationRecord = {
     endDate: ""
 }
 type Props = {
-    handleDataChange: (data: EducationRecord)=>void
+    handleDataChange: (data: EducationRecord)=>void,
+    educationRecords: EducationRecord[]
 }
-const AddEducationForm = ({handleDataChange}: Props) =>{
+const AddEducationForm = ({handleDataChange, educationRecords}: Props) =>{
     const [data, setData] = useState(initialEducation);
     const handleSave = ()=>{
         handleDataChange(data);
@@ -26,6 +27,15 @@ const AddEducationForm = ({handleDataChange}: Props) =>{
     return (
         <fieldset>
             <legend>Education History</legend>
+            {educationRecords.length>0 &&
+                <ul>
+                    {
+                        educationRecords.map(education=>{
+                            return <li key={education.startDate.toString()}>{education.degree}</li>
+                        })
+                    }
+                </ul>
+            }
             <ShowFormLayout addLinkText="Add Education" onSave={handleSave}>
                 <div className={styles.multiple_inputs}>
                     <label>

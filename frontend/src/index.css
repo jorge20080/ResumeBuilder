@@ -2,6 +2,11 @@
 html, body{
   margin:0;
 }
+h2{
+  color: #39ace7;
+  font-weight: 500;
+  font-size: 22px;
+}
 body {
   font-family: "Open Sans", sans-serif;
   /* background-color: #fac670; */

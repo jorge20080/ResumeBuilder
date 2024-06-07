@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import FormLayout from '../FormLayout/FormLayout';
+import styles from '../FormLayout/FormLayout.module.css';
 
 const LoginForm = () =>{
     return (
         <FormLayout>
-            <span>Welcome to <h2>Build My Resume</h2></span>
-            <form>
+            <form className={styles.auth_form}>
+                <span>Welcome to <h2>Build My Resume</h2></span>
                 <label>
                     <span>Username</span>
                     <input type="text"/>

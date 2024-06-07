@@ -1,20 +1,38 @@
-import { useState } from "react";
 import CreateResumeForm from "../../components/CreateResumeForm/CreateResumeForm";
-import Resume1View from "../../components/Resume1View/Resume1View";
+// import Resume1View from "../../components/Resume1View/Resume1View";
 import styles from './CreateResume.module.css';
 import profileData from '../../data/resume.json';
+import Template1PDF from "../../components/Template1PDF/Template1PDF";
+import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
+import Button from "../../components/Button/Button";
 
 const CreateResume = () =>{
-    const [title, setTitle] = useState("Jhon Smith");
-    const [summary, setSummary] = useState("Default Summary");
-
-
     return (
-        <main className={styles.container}>
-            <div className={styles.form_container}>
-                <CreateResumeForm/>
+        <main className={styles.main_container}>
+            {/* <h2>Build your Resume</h2> */}
+            <div className={styles.container}>
+                <div className={styles.form_container}>
+                    <h2>Build Your Resume</h2>
+                    <CreateResumeForm/>
+                </div>
+                {/* <Resume1View resumeData={profileData}/> */}
+                <div className={styles.content_container}>
+                    <div className={styles.flex}>
+                        <h2>Resume Preview</h2>
+                        <PDFDownloadLink document={<Template1PDF resumeData={profileData}/>} fileName={profileData.personalData.givenName.replace(" ", "") + "Resume"}>
+                            {
+                                ({loading})=>loading? 
+                                    <Button type="orange">Generating PDF</Button>
+                                    :
+                                    <Button type="orange">Export PDF</Button>
+                            }
+                        </PDFDownloadLink>
+                    </div>
+                    <PDFViewer showToolbar={false} style={{width:"100%", height:'100%'}}>
+                        <Template1PDF resumeData={profileData}/>
+                    </PDFViewer>
+                </div>
             </div>
-            <Resume1View resumeData={profileData}/>
         </main>
     )
 }

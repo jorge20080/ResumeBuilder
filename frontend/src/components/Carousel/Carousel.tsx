@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useCarousel, { CarouselImages } from "../../hooks/useCaoursel";
 import styles from './Carousel.module.css';
+import imagea from '../../assets/templates/Template1.png';
 
 type Props = {
     carouselImages: CarouselImages
