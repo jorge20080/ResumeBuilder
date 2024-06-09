@@ -7,19 +7,20 @@
         "country": "Canada"
     },
     "profileData":{
-        "description": "I am a professional on the IT field, able to adapt to different environments and work under pressure. Love working as a team in a way to achieve the goals of the company, always following the strategies and guidelines provided by the organization. During my professional career I have been able to develop mostly in the QA field where I have gone from some basic manual testing to some advanced automated testing. I have over 6 years of experience in software quality assurance.",
+        "description": "I am a professional on the IT field, able to adapt to different environments and work under pressure. Love working as a team in a way to achieve the goals of the company, always following the strategies and guidelines provided by the organization. During my professional career I have been able to develop mostly in the QA field where I have gone from some basic manual testing to some advanced automated testing. Currently I'm learning Cypress and going into more depth into Node.js and React.js.",
         "links": [
             {
                 "title": "LinkedIn",
-                "link": "https://www.linkedin.com/in/jorge-luis-de-los-santos-reyes-a388764b/"
-            },
-            {
-                "title": "Porfolio",
                 "link": "https://www.linkedin.com/in/jorge-luis-de-los-santos-reyes-a388764b/"
             }
         ],
         "skills": [
             "JavaScript",
+            "Agile",
+            "Postman",
+            "Azure Devops",
+            "Git",
+            "BitBucket",
             "TypeScript",
             "c#",
             "React",
@@ -35,7 +36,10 @@
             "Postman",
             "Selenium",
             "Xunit",
-            "Nunit"
+            "Nunit",
+            "Jenkins",
+            "Laravel",
+            "Angular"
         ],
         "languages":[
             "Spanish",
@@ -50,28 +54,37 @@
                 "endDate": "Present",
                 "duties": [
                     "Tracked, documented, and reported quality levels and perform analysis for quality improvement initiatives.",
-                    "Create and maintain our automation framework using selenium with C# and NUnit.",
-                    "Write, design, and execute automated tests by creating scripts that run testing functions automatically",
-                    "Determine the priority for test scenarios and create execution plans to implement these scenarios",
-                    "Test different parts of the system including API using Postman tool"
+                    "Created and maintained our automation framework using selenium with C# and Nunit.",
+                    "Wrote, designed, and executed automated testcases by creating scripts that run tests automatically.",
+                    "Determined the priority for test scenarios and create execution plans to implement these scenarios.",
+                    "Tested different parts of the system including API using Postman tool.",
+                    "Debugged and fixed errors in automated test scripts.",
+                    "Served as mentor for other junior QAs within the team.",
+                    "Performed tests to find bugs and report them as I encounter them.",
+                    "Participated in Agile meetings (Daily standups, Restrospectives, Demos, Sprint Planning, Sprint Review, Backlog Refinement).",
+                    "Integrated some automated tests that needed to run SQL scripts in SQL server as part of the setup.",
+                    "Created and executed test plans for new features.",
+                    "Setup the pipelines to be run in a automated manner using Jenkins jobs and Azure pipelines."
                 ]
             },
             {
-                "title": "Software Quality Assurnace Engineer",
+                "title": "Software Quality Assurance Engineer",
                 "company": "FlashParking",
                 "city": "Santo Domingo",
                 "startDate": "July 2019",
                 "endDate": "June 2021",
                 "duties": [
+                    "Story pointing of User Stories from QA perspective.",
                     "Performed routine inspections of finished products to check for defects and other problems before these products are shipped for distribution.",
                     "Tracked, documented, and reported quality levels and perform analysis for quality improvement initiatives.",
                     "Wrote clean automated scripts that test functionality using C# along with Selenium.",
                     "Conducted various tests for systems, networks, applications, databases, software.",
-                    "Logged and documented errors in the tracking system (Jira)."
+                    "Logged and documented errors in the tracking system (Jira).",
+                    "Performed different kinds of testing including, Regression, Functional and Non-Functional tests, Smoke tests, Feature testing, etc."
                 ]
             },
             {
-                "title": "Software Quality Assurnace Analyst",
+                "title": "Software Quality Assurance Analyst",
                 "company": "Kore Wireless",
                 "city": "Santo Domingo",
                 "startDate": "January 2017",
@@ -113,9 +126,9 @@
                 "endDate": "January 2021"
             },
             {
-                "degree": "Networking Technologist",
-                "institution": "ITLA",
-                "city": "Santo Domingo",
+                "degree": "Web Development and Internet Applications Diploma",
+                "institution": "St Clair College",
+                "city": "Windsor, ON",
                 "startDate": "September 2022",
                 "endDate": "April 2024"
             }

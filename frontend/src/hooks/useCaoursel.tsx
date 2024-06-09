@@ -5,7 +5,7 @@ type CarouselImage = string;
 export type CarouselImages = CarouselImage[];
 
 
-const useCarousel = (images: CarouselImages, amount: 5|4|3|1) =>{
+const useCarousel = (images: CarouselImages, amount: 5|4|3|2|1) =>{
     const [startIndex, setStartIndex] = useState(0);
     const currentItems = images.slice(startIndex, amount + startIndex);
 

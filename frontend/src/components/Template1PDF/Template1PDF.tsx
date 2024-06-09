@@ -51,10 +51,7 @@ const Template1PDF = ({resumeData}:Props) =>{
                             <Text style={styles.h2}>&nbsp;Profile</Text>
                         </View>
                         <Text style={[styles.smallText, styles.section, styles.p]}>
-                        I am a professional on the IT field, able to adapt to different environments and work under pressure. Love working as a team in a way to achieve the goals of the company, always following the strategies and guidelines provided by the organization. During my
-                        professional career I have been able to develop mostly in the QA field where I have gone
-                        from some basic manual testing to some advanced automated testing. I have over 6 years
-                        of experience in software quality assurance.
+                        {resumeData.profileData.description}
                         </Text>
 
                         <View style={styles.flex}>
@@ -78,7 +75,33 @@ const Template1PDF = ({resumeData}:Props) =>{
                                 </View>
                             )
                         })}
-                        
+                        <View style={styles.flex}>
+                            <OfficeSvg/>
+                            <Text style={styles.h2}>&nbsp;Education Background</Text>
+                        </View>
+                        {resumeData.profileData.educationHistory?.map(education=>{
+                            return (
+                                <View style={styles.section}>
+                                    <Text style={styles.bullet}></Text>
+                                    <Text style={styles.h3}>{`${education.degree} at ${education.institution}, ${education.city}`}</Text>
+                                    <Text style={styles.smallText}>{`${education.startDate} - ${education.endDate}`}</Text>                                    
+                                </View>
+                            )
+                        })}
+
+                        <View style={styles.flex}>
+                            <OfficeSvg/>
+                            <Text style={styles.h2}>&nbsp;References</Text>
+                        </View>
+                        {resumeData.profileData.references?.map(reference=>{
+                            return (
+                                <View style={styles.section}>
+                                    <Text style={styles.bullet}></Text>
+                                    <Text style={styles.h3}>{`${reference.fullName} from ${reference.placeOfReference}`}</Text>
+                                    <Text style={styles.smallText}>{`${reference.contact.email} - ${reference.contact.phoneNumber}`}</Text>                                    
+                                </View>
+                            )
+                        })}
                     </View>
                 </View>
             

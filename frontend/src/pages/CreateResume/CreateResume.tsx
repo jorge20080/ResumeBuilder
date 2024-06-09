@@ -5,6 +5,9 @@ import profileData from '../../data/resume.json';
 import Template1PDF from "../../components/Template1PDF/Template1PDF";
 import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import Button from "../../components/Button/Button";
+import Carousel from "../../components/Carousel/Carousel";
+import templates from '../../data/templates.json';
+import Template2PDF from "../../components/Template2PDF/Template2PDF";
 
 const CreateResume = () =>{
     return (
@@ -19,7 +22,7 @@ const CreateResume = () =>{
                 <div className={styles.content_container}>
                     <div className={styles.flex}>
                         <h2>Resume Preview</h2>
-                        <PDFDownloadLink document={<Template1PDF resumeData={profileData}/>} fileName={profileData.personalData.givenName.replace(" ", "") + "Resume"}>
+                        <PDFDownloadLink document={<Template2PDF resumeData={profileData}/>} fileName={profileData.personalData.givenName.replace(" ", "") + "Resume"}>
                             {
                                 ({loading})=>loading? 
                                     <Button type="orange">Generating PDF</Button>
@@ -28,8 +31,12 @@ const CreateResume = () =>{
                             }
                         </PDFDownloadLink>
                     </div>
-                    <PDFViewer showToolbar={false} style={{width:"100%", height:'100%'}}>
+                    <Carousel carouselImages={templates} nItems={4}/>
+                    {/* <PDFViewer showToolbar={false} style={{width:"100%", height:'100%'}}>
                         <Template1PDF resumeData={profileData}/>
+                    </PDFViewer> */}
+                    <PDFViewer showToolbar={false} style={{width:"100%", height:"100%"}}>
+                        <Template2PDF resumeData={profileData}/>
                     </PDFViewer>
                 </div>
             </div>

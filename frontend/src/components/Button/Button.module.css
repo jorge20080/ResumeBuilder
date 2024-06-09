@@ -21,7 +21,8 @@
     background-color: white;
     border: 2px solid #fe6703;
     color: #fe6703;
-    border-left: 5px solid #fe6703;
+    border-radius: 50px;
+    padding: 5px 15px;
 }
 .btn:hover{
     cursor: pointer;

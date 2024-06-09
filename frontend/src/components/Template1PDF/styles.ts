@@ -10,6 +10,8 @@ export const styles = StyleSheet.create({
     flex:{
         display:"flex",
         flexDirection:"row",
+        marginTop:10,
+        marginBottom:5
     },
     secondaryTitle: {
         marginBottom:5
@@ -59,7 +61,6 @@ export const styles = StyleSheet.create({
         fontFamily: 'ab',
         fontWeight:"heavy",
         fontSize: 11,
-        marginVertical:5,
         color:"black"
     },
     h3:{

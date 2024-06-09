@@ -4,10 +4,11 @@ import styles from './Carousel.module.css';
 import imagea from '../../assets/templates/Template1.png';
 
 type Props = {
-    carouselImages: CarouselImages
+    carouselImages: CarouselImages,
+    nItems?: 5|4|3|2|1
 }
-const Carousel = ({carouselImages} : Props) =>{
-    const [count, setCount] = useState<5|4|3|1>(5);
+const Carousel = ({carouselImages, nItems} : Props) =>{
+    const [count, setCount] = useState<5|4|3|2|1>(nItems ?? 4);
     const {currentItems, handleNextImage, handlePreviousImage} = useCarousel(carouselImages, count);
     
     // window.addEventListener('resize', ()=>{
