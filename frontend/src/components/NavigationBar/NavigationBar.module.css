@@ -54,7 +54,7 @@
 .nav_bar a, .nav_bar a:visited{
     text-decoration: none;
     font-weight: 500;
-    margin-inline: 7px 15px;
+    margin-left: 15px;
     padding: 10px 2px;
     color: #2d383c;
     font-weight: 500;
@@ -67,10 +67,11 @@
 .nav_bar .active_link, .nav_bar .active_link:visited, .nav_bar .active_link:hover{
     background-color: #2d383c;
     color: white;
-    padding: 3px 10px;
+    padding: 5px 10px;
     border: 2px solid white;
     outline: 2px solid #2d383c;
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    /* margin-inline:0; */
 
 }
 

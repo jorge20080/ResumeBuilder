@@ -13,6 +13,7 @@ const CreateResume = () =>{
     return (
         <main className={styles.main_container}>
             {/* <h2>Build your Resume</h2> */}
+            {/* <Carousel carouselImages={templates} nItems={5}/> */}
             <div className={styles.container}>
                 <div className={styles.form_container}>
                     <h2>Build Your Resume</h2>
@@ -31,12 +32,12 @@ const CreateResume = () =>{
                             }
                         </PDFDownloadLink>
                     </div>
-                    <Carousel carouselImages={templates} nItems={4}/>
+                    
                     {/* <PDFViewer showToolbar={false} style={{width:"100%", height:'100%'}}>
                         <Template1PDF resumeData={profileData}/>
                     </PDFViewer> */}
-                    <PDFViewer showToolbar={false} style={{width:"100%", height:"100%"}}>
-                        <Template2PDF resumeData={profileData}/>
+                    <PDFViewer showToolbar={false} style={{width:"90%", height:"100%", marginLeft:"auto", border:"none"}}>
+                        <Template1PDF resumeData={profileData}/>
                     </PDFViewer>
                 </div>
             </div>

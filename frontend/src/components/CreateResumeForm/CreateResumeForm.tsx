@@ -67,9 +67,9 @@ const CreateResumeForm = () =>{
                     <AddSingleItemForm text="Language" handleDataChange={handleLanguagesData} values={languages}/>
                     <AddEducationForm handleDataChange={handleEducationData} educationRecords={educationRecords}/>
                     <AddWorkForm handleDataChange={handleWorkData} workRecords={workRecords}/>
-                    {/* <AddSingleItemForm text="Skill" handleDataChange={()=>{}}/>
-                    <AddSingleItemForm text="Link" handleDataChange={()=>{}}/>
-                    <AddSingleItemForm text="Reference" handleDataChange={()=>{}}/> */}
+                    <AddSingleItemForm text="Skill" handleDataChange={()=>{}} values={[]}/>
+                    <AddSingleItemForm text="Link" handleDataChange={()=>{}} values={[]}/>
+                    <AddSingleItemForm text="Reference" handleDataChange={()=>{}} values={[]}/>
                     <input type="submit" value="Save"/>
                 </form>
             </FormLayout>

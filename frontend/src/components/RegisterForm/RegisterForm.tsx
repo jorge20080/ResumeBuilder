@@ -8,20 +8,28 @@ const RegisterForm = () =>{
             <form className={styles.auth_form}>
                 <span >Welcome to <h2>Build My Resume</h2></span>
                 <label>
-                    <span>First Name</span>
+                    <span>Given Name(s)</span>
                     <input type="text"/>
                 </label>
                 <label>
-                    <span>Last Name</span>
-                    <input type="text"/>
-                </label>
-                <label>
-                    <span>Username</span>
+                    <span>Last Name(s)</span>
                     <input type="text"/>
                 </label>
                 <label>
                     <span>Email</span>
                     <input type="email"/>
+                </label>
+                <label>
+                    <span>Phone Number</span>
+                    <input type="text"/>
+                </label>
+                <label>
+                    <span>Country</span>
+                    <input type="text"/>
+                </label>
+                <label>
+                    <span>City</span>
+                    <input type="text"/>
                 </label>
                 <label>
                     <span>Password</span>
@@ -31,6 +39,7 @@ const RegisterForm = () =>{
                     <span>Repeat Password</span>
                     <input type="password"/>
                 </label>
+                
                 <p>Have an account already? Click <Link to="/login">here</Link> to Login</p>
                 <input type="submit" value="register"/>
             </form>

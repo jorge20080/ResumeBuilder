@@ -21,7 +21,7 @@
     background-color: white;
     border: 2px solid #fe6703;
     color: #fe6703;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 5px 15px;
 }
 .btn:hover{

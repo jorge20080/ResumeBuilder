@@ -49,6 +49,7 @@ const AddWorkForm = ({handleDataChange, workRecords}:Props) =>{
                     </label>
                     <label>
                         <span>End Date:</span>
+                        <input name="startDate" type="date" onChange={handleInputChange}/>
                     </label>
                 </div>
                 <div className={styles.multiple_inputs}>
