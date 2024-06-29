@@ -37,7 +37,7 @@ const CreateResume = () =>{
                         <Template1PDF resumeData={profileData}/>
                     </PDFViewer> */}
                     <PDFViewer showToolbar={false} style={{width:"90%", height:"100%", marginLeft:"auto", border:"none"}}>
-                        <Template1PDF resumeData={profileData}/>
+                        <Template2PDF resumeData={profileData}/>
                     </PDFViewer>
                 </div>
             </div>

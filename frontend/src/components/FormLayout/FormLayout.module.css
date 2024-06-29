@@ -8,6 +8,12 @@
 .auth_form{
     padding: 0 30px;
 }
+.error{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
 .container input{
     width: 100%;
     box-sizing: border-box;

@@ -28,7 +28,7 @@ const userSchema = new Schema({
     city: {
         type: String,
         required: true
-    }
-})
+    },
+},  {timestamps: true})
 
 export default model("user", userSchema);

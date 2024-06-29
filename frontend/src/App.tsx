@@ -1,10 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import RootLayout from './components/RootLayout/RootLayout'
+import { AuthContextProvider } from './context/auth-context'
 import CreateResume from './pages/CreateResume/CreateResume'
 import Home from './pages/Home/Home'
-import Login from './pages/Login/Login'
-import Register from './pages/Register/Register'
+import Login, { action as loginAction } from './pages/Login/Login'
+import Register, { action } from './pages/Register/Register'
+
+import { checkAuthLoader } from './utils/auth'
 
 function App() {
   const router = createBrowserRouter([
@@ -18,20 +21,23 @@ function App() {
         },
         {
           path:'login',
-          element: <Login/>
+          element: <Login/>,
+          action: loginAction
         },
         {
           path:'signup',
-          element: <Register/>
+          element: <Register/>,
+          action: action
         },
         {
           path:'buildresume',
-          element: <CreateResume/>
+          element: <CreateResume/>,
+          loader: checkAuthLoader
         }
       ]
     }
   ])
-  return <RouterProvider router={router}/>
+  return <AuthContextProvider><RouterProvider router={router}/></AuthContextProvider>
 }
 
 export default App

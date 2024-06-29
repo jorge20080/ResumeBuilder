@@ -51,6 +51,9 @@
     color: #2d383c;
     margin-top: -2px;
 }
+.logo3{
+    width: 120px;
+}
 .nav_bar a, .nav_bar a:visited{
     text-decoration: none;
     font-weight: 500;
@@ -74,7 +77,9 @@
     /* margin-inline:0; */
 
 }
-
+.logoutBtn{
+    color: red !important;
+}
 @media print {
     .nav_bar {
       display: none;
